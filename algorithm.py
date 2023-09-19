@@ -116,8 +116,11 @@ if(check_point):
 else:
     print("Existem pontos que não pertencem ao GF")
 print("=" * 30)
-    
 
-
+print("Inverse - Test")
+# 31^(47-2) mod 47 = 44
+# 44^(47-2) mod 47 = 31
+print(inverse(44, p))
+print(inverse(inverse(44, p), p))
 
 
